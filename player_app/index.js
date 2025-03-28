@@ -7,11 +7,14 @@ const divMensajeDia = document.getElementById("mensajeDia").style.display = "non
 const divMensajeNoche = document.getElementById("mensajeNoche").style.display = "none"; 
 const inputNombreDeUsuario = document.getElementById("nombreDeUsuario");
 
-let idPlayer ;
-let rolPlayer;
-let namePlayer;
 
-const btn = document.getElementById("registro-usuario").addEventListener("click", enviarJugador);
+let rolPlayer = "";
+let idPlayer = 0;
+let namePlayer = "";
+let poloCounter = 0;
+
+const btn = document.getElementById("registro-usuario")
+btn.addEventListener("click", enviarJugador);
 
 
 function enviarJugador() {
